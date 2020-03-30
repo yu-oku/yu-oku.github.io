@@ -35,20 +35,22 @@
 
     <section id="showcase">
       <div class="container">
+        <div class="top-img text-center">
+          <img src="img/hanabi.jpg" >
+          <p class="Morgan text-right">Photo by Morgan Sessions on Unsplash</p>
         <div class="row">
           <div class="col-md-6 col-sm-12">
-            <div class="top-img text-center">
-              <img src="img/banner.jpg">
-            </div>
+            
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-12 col-sm-12">
             <div class="showcase-right">
-              <h2 class=" text-center text-info mb-3">初めまして！<br>ご覧いただきありがとうございます。</h2>
+              <h2 class="text-center text-primary mb-3">初めまして！<br>ご覧いただきありがとうございます。</h2>
               <p class="text-muted">このサイトでは、私が行っている研究活動について発信しようと考えております。<br></p>
             </div>
           </div>
+          </div>
         </div>
-      </div>
+    </div>
     </section>
 
     <section id="testimonial">
@@ -91,7 +93,7 @@
           <div class="col-md-6 col-sm-6">
             <div class="info-left">
               <h2>櫛田研究室</h2>
-              <p>私が所属している研究室です。<br>私は主に医療分野の研究をしています。<br>場所は主に湘南キャンパスの18号館で研究をしています。</p>
+              <p>私が所属している研究室です。<br>私は医療分野の研究をしています。<br>場所は主に湘南キャンパスの18号館で研究をしています。</p>
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
@@ -107,7 +109,7 @@
     <section id="contact">
       <div class="container text-center">
         <div class="row">
-          <div class="col-md-5 col-sm-6">
+          <div class="col-md-5 col-sm-12">
             <p>こちらのフォームでは、現在お問い合わせを受け付けておりません。<br>ホームページ制作等、その他お問い合わせやご相談などは、下記メールにてお願いいたします。</p>
             <p>Gmail: asapmfs@gmail.com</p>
             <form>
@@ -146,20 +148,26 @@
     <script>
         window.sr = ScrollReveal();
          sr.reveal('.navbar-brand', {
-          duration: 2000,
+          duration: 1800,
+          origin:'left',
+          distance:'-1000px'
+
+        });
+         sr.reveal('.Morgan', {
+          duration: 4500,
           origin:'left',
           distance:'-1000px'
 
         });
 
            sr.reveal('.top-img', {
-          duration: 2000,
+          duration: 7000,
           origin:'bottom',
           distance:'-1000px'
 
         });
           sr.reveal('.meigen', {
-          duration: 3000,
+          duration: 4500,
           origin:'left',
           delay:500,
           distance:'-100px'
@@ -167,42 +175,42 @@
         });
 
         sr.reveal('.navbar', {
-          duration: 2000,
+          duration: 3000,
           origin:'bottom'
         });
         sr.reveal('.showcase-left', {
-          duration: 2000,
+          duration: 3500,
           origin:'top',
           distance:'300px'
         });
         sr.reveal('.showcase-right', {
-          duration: 2000,
-          origin:'bottom',
-          distance:'300px'
+          duration: 3500,
+          origin:'top',
+          distance:'1000px'
         });
         sr.reveal('.showcase-btn', {
-          duration: 2000,
+          duration: 3500,
           delay:300,
           origin:'bottom'
         });
         sr.reveal('#testimonial div', {
-          duration: 2000,
+          duration: 3500,
           origin:'bottom'
         });
         sr.reveal('.info-left', {
-          duration: 2000,
+          duration: 3500,
           origin:'bottom',
           distance:'300px',
           viewFactor: 0.2
         });
         sr.reveal('.info-right', {
-          duration: 2000,
+          duration: 3500,
           origin:'right',
           distance:'300px',
           viewFactor: 0.2
         });
         sr.reveal('#contact', {
-          duration: 2000,
+          duration: 3500,
           origin:'bottom',
           distance:'300px',
           viewFactor:0.2
