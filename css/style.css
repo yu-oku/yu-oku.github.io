@@ -105,10 +105,11 @@ padding-top:20px;
 
 .meigen {
   color:white;
+  font-size:5px;
 }
 
 #testimonial p.customer{
-  font-size:20px;
+  font-size:10px;
   color:#FFFFFF;
 }
 
@@ -192,7 +193,7 @@ padding-top:20px;
 /*About me End*/
 
 #contact{
-  background:url(../img/image3.png);
+  background:url(../img/footer.png);
   padding:40px;
   color:#fff;
   border-top:#333 7px solid;
