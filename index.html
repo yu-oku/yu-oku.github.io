@@ -7,12 +7,49 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--adobe fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/usc7fmd.css">
+    <!--adobe fonts-->
+    <!--h２タグのデザイン start-->
+    <link rel="stylesheet" href="https://use.typekit.net/usc7fmd.css">
+    <!--h２タグのデザイン end-->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!--ちょっと変わってるナビゲーションバー start --> 
+    <link rel="stylesheet" href="https://use.typekit.net/pmh6mjr.css">
+    <!--ちょっと変わってるナビゲーションバー end --> 
+    <!--おもしろ日本語フォント start-->
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'dkb7lig',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+    <!--おもしろ日本語フォント end-->
+<!--ロゴデザイン start-->
+<link rel="stylesheet" href="https://use.typekit.net/kks5niz.css">
+<!--ロゴデザイン end-->
+<!--名言の筆記体デザイン start-->
+<link rel="stylesheet" href="https://use.typekit.net/wlv8dwf.css">
+<!--名言の筆記体デザイン end-->
   </head>
   <body>
+    <div class="bg-video-wrap">
+        <video src="img/universe.mp4" loop muted autoplay>
+        </video>
+          <div class="overlay">
+             <div class="showcase-right">
+              <h2 class="welcome text-center mb-3">初めまして！<br>ご覧いただきありがとうございます。</h2>
+              <p class=" text-center text-light">このサイトでは、私が行っている研究活動について発信しようと考えております。<br></p>
+            </div>
+          </div>
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+    <div class="container">
+      
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -26,17 +63,21 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#showcase">Home</a></li>
             <li><a href="#info1">About</a></li>
-            <li><a href="#portfolio">Labo</a></li>
+            <li><a href="#Labo">Labo</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
+
       </div>
+     
     </nav>
 
     <section id="showcase">
       <div class="container">
+        
+      </div>
         <div class="top-img text-center">
-          <img src="img/hanabi.jpg" >
+   
           <p class="Morgan text-right">Photo by Morgan Sessions on Unsplash</p>
         </div>
         <div class="row">
@@ -45,8 +86,8 @@
           </div>
           <div class="col-md-12 col-sm-12">
             <div class="showcase-right">
-              <h2 class="text-center text-primary mb-3">初めまして！<br>ご覧いただきありがとうございます。</h2>
-              <p class=" text-center text-muted">このサイトでは、私が行っている研究活動について発信しようと考えております。<br></p>
+              <h2 class="welcome text-center mb-3">初めまして！<br>ご覧いただきありがとうございます。</h2>
+              <p class=" text-center text-light">このサイトでは、私が行っている研究活動について発信しようと考えております。<br></p>
             </div>
           </div>
           </div>
@@ -65,15 +106,12 @@
     <section id="info1">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="about-img text-center">
-            <img src="img/about.jpg"> 
-            </div>
-             
+          <div class="col-md-6 col-sm-12">
+            <img class="about-img" src="img/about.jpg">   
           </div>
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-6 col-sm-12">
             <div class="info-right">
-              <h2>About me</h2>
+              <h2 class="whoami">About me</h2>
               <p>東海大学理学部物理学科３年のYuです！<br>サークルはギター音楽研究部に所属しており、アコギとベースが弾けます。
               また、サークルではバンド活動をしており、建学祭や春ライブなどで演奏したりしています。</p>
               <p>趣味はカフェ巡りやサイト制作、弾き語りなどです。</p>
@@ -81,13 +119,14 @@
               <p>インスタでカフェの写真とか載せているので、良かったら遊びに来てください！</p>
               <a href="https://instagram.com/yuh__gram" class="btn-social-long-insta">
               <i class="fab fa-instagram"></i> <span>yuh_gram</span></a>
+              
             </div>
           </div>
         </div>
       </div>
     </section>
     <hr>
-    <section id="info2">
+    <section id="Labo">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6">
@@ -110,6 +149,7 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-md-5 col-sm-12">
+            <h2 class="contactme">Contact</h2>
             <p>こちらのフォームでは、現在お問い合わせを受け付けておりません。<br>ホームページ制作等、その他お問い合わせやご相談などは、下記メールにてお願いいたします。</p>
             <p>Gmail: asapmfs@gmail.com</p>
             <form>
@@ -160,12 +200,6 @@
 
         });
 
-           sr.reveal('.top-img', {
-          duration: 7000,
-          origin:'bottom',
-          distance:'-1000px'
-
-        });
           sr.reveal('.meigen', {
           duration: 4500,
           origin:'left',
@@ -179,13 +213,13 @@
           origin:'bottom'
         });
         sr.reveal('.showcase-left', {
-          duration: 6000,
+          duration: 6500,
           origin:'top',
           distance:'300px'
         });
         sr.reveal('.showcase-right', {
           duration: 7200,
-          origin:'top',
+          origin:'bottom',
           distance:'1000px'
         });
         sr.reveal('.showcase-btn', {
