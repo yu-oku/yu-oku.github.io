@@ -1,10 +1,67 @@
 body{
   margin-top:70px;
   font-size:16px;
+  background: #000000;
+  color:white;
+
+
+
+
 }
 
+.bg-video-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/Night.png) no-repeat center center/cover;
+}
+video {
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: -3;
+}
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: 
+  background-image:linear-gradient(45deg, rgba(0,0,0,-2.7) 93%, rgba(0,0,0,7.7) 37%)
+  background-size: 4px 4px;
+  z-index: 2;
+}
+
+
+
+
 h1,h2,h3,h4,h5,h6{
-  font-family:Poppins;
+  font-family: ta-f1blockline, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+.whoami,.contactme {
+font-family: oskar-inline, sans-serif !important;
+font-weight: 700;
+font-style: normal;
+font-size:50px !important;
+}
+
+
+#navbar{
+font-family: professor-minty, sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size:20px;
+}
+
+.navbar-brand {
+  font-family: comrade,sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 p{
@@ -13,29 +70,24 @@ p{
 
 
 /*TOP start*/
-.top-img {
-  margin:0 auto;
-  width:100%;
-  margin-top:50px;
-}
+
 /*TOP end*/
 
 /*About me start */
 .about-img {
-  width:100%;
-  margin-top:60px;
+  margin-top:30px;
 }
 
 /*About me end*/
 
-
-
-
-.navbar-default{
-  background:#fff;
-  border:0;
-  font-family:Poppins;
+/*About imgに対してwidth:100%の適応が効かなかったので、追加した*/
+img {
+  width:100%;
 }
+
+ 
+
+
 
 .navbar-brand{
   font-size:20px;
@@ -44,8 +96,17 @@ p{
 }
 
 #showcase h1{
+
   font-size:50px;
   margin-bottom:20px;
+}
+
+.welcome {
+  padding-top:250px;
+    background: linear-gradient(130deg, #ffd800, #ff0000 75%, #ffd800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255,255,255,0.0);
+  color: #ff0000;
 }
 
 #showcase img{
@@ -97,6 +158,7 @@ padding-top:20px;
 
 .meigen {
   color:white;
+
 }
 
 #testimonial p.customer{
@@ -161,11 +223,10 @@ padding-top:20px;
 
   }
 #info1 .info-right{
-  margin-top:90px;
+  margin-top:30px;
 }
 
 
-.info1 
 
 .info-right p{
   padding-top:20px;
@@ -184,6 +245,9 @@ padding-top:20px;
 /*About me End*/
 
 #contact{
+  width:100%
+  margin:0 auto;
+
   background:url(../img/footer.jpg);
   padding:40px;
   color:#fff;
@@ -203,13 +267,3 @@ footer{
 
 
 
-@media (min-width: 200px) and (max-width: 768px){
-
-.about-img {
-  width:75%;
-  
-
-
-}
-
-}
